@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Examen pizzas</title>
+
+    <script src="libraries/p5.js"></script>
+    <script src="libraries/p5.dom.js"></script>
+    <script src="libraries/p5.sound.js"></script>
+    <script src="algoritmos.js"></script>
+    <script src="sketch.js"></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        background-color: #263145;
+        color: #eee;
+      }
+
+      canvas {
+        margin: auto;
+      }
+
+      .texto {
+        text-align: center;
+      }
+
+      .title {
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      .title p {
+        display: inline-block;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contenedor">
+      <div class="texto">
+        <h3>REPARTIR PIZZA</h3>
+        <input class="texto__input" type="number" id="inputPizza" min="1" />
+        <button onclick="partirPizza()">Partir</button>
+      </div>
+      <div class="title">
+        <p>Algoritmo Punto Pendiente |</p>
+        <p>Algoritmo DDA |</p>
+        <p>Algoritmo Bresenham</p>
+      </div>
+    </div>
+  </body>
+</html>
